@@ -1,0 +1,26 @@
+// head_area.scss
+#headBox{ position:fixed; top:0; left:0; z-index:1000; width:100%; @include conUnit(height, 100); background-color: #fff; 
+  &>.gnb_area{ width:80%; height:100%; margin:auto; 
+    &>h1{ float:left; width:20%; height:100%; background-color: #edd; margin-right:5%; }
+    &>.gnb{ float:left; width:60%; height:100%; margin-right:5%; 
+      &>ul{ @include fullBox; 
+        &>li{ float:left; width:20%; height:100%; margin-left:5%;
+          &>dl{ width:100%; height:auto;
+            &>dt{ width:100%; @include conUnit(height, 100); @include conUnit(line-height, 100); text-align:center; text-transform:capitalize; @include conUnit(font-size, 20); }
+            &>dd{ display:none; width:100%; height:auto; background-color: #fff; 
+              &>a{ display:block; width:100%; @include conUnit(height, 50); text-align:center; @include conUnit(line-height, 50); @include conUnit(font-size, 20); color:#000; text-transform:capitalize; }
+            } //dd
+          } //dl  
+        } //li
+      } //ul
+    } //gnb
+    &>.btn_area{ float:right; width:10%; height:100%;
+      &>i{ @include fullBox; text-align:center; @include conUnit(font-size, 50); @include conUnit(line-height, 100); color:#000; } 
+      &>ul{ display:none; width:100%; height:auto;
+        &>li{ width:100%; height:auto; background-color: #fff;
+          &>a{ display:block; width:100%; @include conUnit(height, 50); @include conUnit(font-size, 20); text-align:center; text-transform:capitalize; @include conUnit(line-height, 50); }
+        } //li
+      } //ul
+    } //btn_area
+  } //gnb_area
+} //headBox

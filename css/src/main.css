@@ -1,0 +1,495 @@
+/*
+@mixin perantWidth($pw:){
+  width:$pw;
+}
+*/
+#headBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100px;
+  height: 6.25rem;
+  background-color: #fff; }
+  #headBox > .gnb_area {
+    width: 80%;
+    height: 100%;
+    margin: auto; }
+    #headBox > .gnb_area > h1 {
+      float: left;
+      width: 20%;
+      height: 100%;
+      background-color: #edd;
+      margin-right: 5%; }
+    #headBox > .gnb_area > .gnb {
+      float: left;
+      width: 60%;
+      height: 100%;
+      margin-right: 5%; }
+      #headBox > .gnb_area > .gnb > ul {
+        width: 100%;
+        height: 100%;
+        margin: auto; }
+        #headBox > .gnb_area > .gnb > ul > li {
+          float: left;
+          width: 20%;
+          height: 100%;
+          margin-left: 5%; }
+          #headBox > .gnb_area > .gnb > ul > li > dl {
+            width: 100%;
+            height: auto; }
+            #headBox > .gnb_area > .gnb > ul > li > dl > dt {
+              width: 100%;
+              height: 100px;
+              height: 6.25rem;
+              line-height: 100px;
+              line-height: 6.25rem;
+              text-align: center;
+              text-transform: capitalize;
+              font-size: 20px;
+              font-size: 1.25rem; }
+            #headBox > .gnb_area > .gnb > ul > li > dl > dd {
+              display: none;
+              width: 100%;
+              height: auto;
+              background-color: #fff; }
+              #headBox > .gnb_area > .gnb > ul > li > dl > dd > a {
+                display: block;
+                width: 100%;
+                height: 50px;
+                height: 3.125rem;
+                text-align: center;
+                line-height: 50px;
+                line-height: 3.125rem;
+                font-size: 20px;
+                font-size: 1.25rem;
+                color: #000;
+                text-transform: capitalize; }
+    #headBox > .gnb_area > .btn_area {
+      float: right;
+      width: 10%;
+      height: 100%; }
+      #headBox > .gnb_area > .btn_area > i {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+        font-size: 50px;
+        font-size: 3.125rem;
+        line-height: 100px;
+        line-height: 6.25rem;
+        color: #000; }
+      #headBox > .gnb_area > .btn_area > ul {
+        display: none;
+        width: 100%;
+        height: auto; }
+        #headBox > .gnb_area > .btn_area > ul > li {
+          width: 100%;
+          height: auto;
+          background-color: #fff; }
+          #headBox > .gnb_area > .btn_area > ul > li > a {
+            display: block;
+            width: 100%;
+            height: 50px;
+            height: 3.125rem;
+            font-size: 20px;
+            font-size: 1.25rem;
+            text-align: center;
+            text-transform: capitalize;
+            line-height: 50px;
+            line-height: 3.125rem; }
+
+#viewBox {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  height: 62.5rem;
+  overflow: hidden; }
+  #viewBox > .guide_box {
+    width: 100%;
+    height: 100%;
+    margin: auto; }
+    #viewBox > .guide_box > ul {
+      width: 500%;
+      height: 100%;
+      transform: translateX(-20%); }
+      #viewBox > .guide_box > ul > li {
+        float: left;
+        width: 20%;
+        height: 100%; }
+        #viewBox > .guide_box > ul > li > a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          margin: auto; }
+    #viewBox > .guide_box > .pattern_box {
+      position: absolute;
+      top: 65%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 300px;
+      width: 18.75rem;
+      height: 250px;
+      height: 15.625rem;
+      background-image: url("../../img/etc/pattern-01.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50% 50%; }
+      #viewBox > .guide_box > .pattern_box > span {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        height: auto;
+        font-size: 18px;
+        font-size: 1.125rem;
+        color: #fff;
+        text-align: center;
+        text-shadow: 3px 3px 5px #000; }
+    #viewBox > .guide_box > .btn_area {
+      position: absolute;
+      right: 10%;
+      bottom: 20%;
+      width: auto;
+      height: auto;
+      background-color: #fff; }
+      #viewBox > .guide_box > .btn_area > button {
+        float: right;
+        width: 100px;
+        width: 6.25rem;
+        height: 100px;
+        height: 6.25rem;
+        background-color: transparent; }
+      #viewBox > .guide_box > .btn_area > .prev {
+        float: left; }
+
+#conBox {
+  position: relative;
+  width: 100%;
+  height: 900px;
+  height: 56.25rem; }
+  #conBox > .fullBox {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: #f6f1ee; }
+    #conBox > .fullBox > ul {
+      width: 80%;
+      height: 20%;
+      margin: auto; }
+      #conBox > .fullBox > ul > li {
+        float: left;
+        width: 25%;
+        height: 100%; }
+        #conBox > .fullBox > ul > li > span {
+          display: block;
+          width: 100%;
+          height: 100%;
+          margin: auto;
+          text-align: center;
+          line-height: 200px;
+          line-height: 12.5rem;
+          font-size: 30px;
+          font-size: 1.875rem;
+          font-weight: bold;
+          color: #000; }
+    #conBox > .fullBox > .content_area {
+      width: 100%;
+      height: 80%; }
+      #conBox > .fullBox > .content_area > .imgBox {
+        float: left;
+        width: 40%;
+        height: 100%;
+        background-image: url("../../img/article01/img01.jpg");
+        background-size: contain;
+        background-position: 50% 50%;
+        background-repeat: no-repeat; }
+      #conBox > .fullBox > .content_area > .txtArea {
+        position: absolute;
+        right: 0;
+        width: 60%;
+        height: 700px;
+        height: 43.75rem;
+        background-image: url("../../img/etc/flower-pattern-02.png");
+        background-size: contain;
+        background-position: 50% 50%;
+        background-repeat: no-repeat; }
+        #conBox > .fullBox > .content_area > .txtArea > span {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 500px;
+          width: 31.25rem;
+          height: 300px;
+          height: 18.75rem;
+          font-size: 30px;
+          font-size: 1.875rem;
+          color: #333;
+          text-align: center; }
+
+#conBox02 {
+  padding: 50px;
+  padding: 3.125rem;
+  box-sizing: border-box;
+  width: 100%;
+  height: 1200px;
+  height: 75rem;
+  background-color: #edd; }
+  #conBox02 > .fullBox {
+    position: relative;
+    padding-top: 100px;
+    padding-top: 6.25rem;
+    margin-top: 5%;
+    width: 100%;
+    height: 70%;
+    background-color: #f6f1ee; }
+    #conBox02 > .fullBox > .patt_box {
+      position: absolute;
+      top: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60%;
+      height: 100px;
+      height: 6.25rem;
+      background-image: url("../../img/etc/art02-patt.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50% 50%; }
+    #conBox02 > .fullBox > ul {
+      padding: 50px;
+      padding: 3.125rem;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      margin: auto; }
+      #conBox02 > .fullBox > ul > li {
+        float: left;
+        width: 30%;
+        height: 80%;
+        margin-right: 5%;
+        background-color: #fff; }
+        #conBox02 > .fullBox > ul > li:last-child {
+          margin-right: 0; }
+        #conBox02 > .fullBox > ul > li > a {
+          display: block;
+          box-sizing: border-box;
+          width: 100%;
+          height: 100%;
+          margin: auto; }
+          #conBox02 > .fullBox > ul > li > a > p {
+            display: none;
+            padding: 20px;
+            padding: 1.25rem;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100px;
+            height: 6.25rem;
+            background-color: rgba(255, 255, 255, 0.7);
+            transform: translateY(400%);
+            text-align: center;
+            font-size: 20px;
+            font-size: 1.25rem;
+            color: #000; }
+    #conBox02 > .fullBox > .line {
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 50px;
+      bottom: 3.125rem;
+      width: 90%;
+      height: 20px;
+      height: 1.25rem;
+      background-color: #fff;
+      border-radius: 10px;
+      border-radius: 0.625rem; }
+      #conBox02 > .fullBox > .line > ul {
+        width: 100%;
+        height: 100%;
+        margin: auto; }
+        #conBox02 > .fullBox > .line > ul > li {
+          float: left;
+          width: 33.33333%;
+          height: 100%;
+          border-radius: 10px;
+          border-radius: 0.625rem; }
+          #conBox02 > .fullBox > .line > ul > li > a {
+            display: block;
+            width: 20px;
+            width: 1.25rem;
+            height: 20px;
+            height: 1.25rem;
+            border-radius: 100%;
+            background-color: #edd;
+            margin: auto;
+            transform: scale(1.5); }
+          #conBox02 > .fullBox > .line > ul > li.action {
+            background-color: #edd; }
+          #conBox02 > .fullBox > .line > ul > li.action > a {
+            transform: scale(2.3); }
+    #conBox02 > .fullBox > .txt_area {
+      display: block;
+      position: absolute;
+      top: 105%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 100px;
+      height: 6.25rem; }
+      #conBox02 > .fullBox > .txt_area > a {
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 10%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 10px; }
+        #conBox02 > .fullBox > .txt_area > a > span {
+          display: block;
+          width: 100%;
+          height: 100%;
+          margin: auto; }
+
+#asideBox {
+  width: 100%;
+  height: 1000px;
+  height: 62.5rem;
+  background-color: #f6f1ee; }
+  #asideBox > .fullBox {
+    position: relative;
+    padding-top: 10%;
+    width: 100%;
+    height: 80%; }
+    #asideBox > .fullBox > .img_area {
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      background-image: url("../../img/aside/img01.jpg");
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat; }
+      #asideBox > .fullBox > .img_area > .txt_area {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        height: 40%;
+        background-color: rgba(255, 255, 255, 0.5); }
+        #asideBox > .fullBox > .img_area > .txt_area > span {
+          display: block;
+          width: 100%;
+          height: 100px;
+          height: 6.25rem;
+          text-align: center;
+          line-height: 100px;
+          line-height: 6.25rem;
+          font-size: 30px;
+          font-size: 1.875rem;
+          color: #000;
+          text-decoration: underline; }
+        #asideBox > .fullBox > .img_area > .txt_area > p {
+          padding: 30px;
+          padding: 1.875rem;
+          box-sizing: border-box;
+          width: 100%;
+          height: 70%;
+          font-size: 24px;
+          font-size: 1.5rem; }
+        #asideBox > .fullBox > .img_area > .txt_area > .btn_area {
+          position: absolute;
+          bottom: 10%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 300px;
+          width: 18.75rem;
+          height: 80px;
+          height: 5rem;
+          background-color: #000; }
+          #asideBox > .fullBox > .img_area > .txt_area > .btn_area > a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin: auto; }
+            #asideBox > .fullBox > .img_area > .txt_area > .btn_area > a > span {
+              display: block;
+              width: 100%;
+              height: auto;
+              font-size: 20px;
+              font-size: 1.25rem;
+              text-align: center;
+              color: #fff;
+              text-transform: capitalize;
+              line-height: 80px;
+              line-height: 5rem; }
+
+#footBox {
+  width: 100%;
+  height: 30%;
+  background-color: #fff; }
+  #footBox > .fullBox {
+    width: 100%;
+    height: 100%;
+    margin: auto; }
+    #footBox > .fullBox > .logo_area {
+      width: 100%;
+      height: 30%;
+      margin-bottom: 50px;
+      margin-bottom: 3.125rem; }
+      #footBox > .fullBox > .logo_area > .logo_img {
+        width: 20%;
+        height: 100%;
+        margin: auto;
+        background-color: #edd; }
+        #footBox > .fullBox > .logo_area > .logo_img > a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          margin: auto; }
+    #footBox > .fullBox > .icon_area {
+      width: 100%;
+      height: 40%;
+      margin-bottom: 30px;
+      margin-bottom: 1.875rem; }
+      #footBox > .fullBox > .icon_area > ul {
+        padding: 10px;
+        padding: 0.625rem;
+        box-sizing: border-box;
+        width: 60%;
+        height: 100%;
+        margin: auto; }
+        #footBox > .fullBox > .icon_area > ul > li {
+          float: left;
+          width: 15%;
+          height: 100%;
+          margin-right: 8%;
+          border-radius: 100%; }
+          #footBox > .fullBox > .icon_area > ul > li:first-child {
+            margin-left: 8%; }
+          #footBox > .fullBox > .icon_area > ul > li > a {
+            display: block;
+            width: 100px;
+            width: 6.25rem;
+            height: 100px;
+            height: 6.25rem;
+            border-radius: 100%; }
+    #footBox > .fullBox > address {
+      width: 100%;
+      height: 30%;
+      font-style: normal; }
+      #footBox > .fullBox > address > span {
+        display: block;
+        width: 100%;
+        height: 100px;
+        height: 6.25rem;
+        text-align: center;
+        line-height: 100px;
+        line-height: 6.25rem;
+        font-size: 20px;
+        font-size: 1.25rem;
+        color: #000; }

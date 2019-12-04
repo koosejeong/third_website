@@ -1,0 +1,31 @@
+// article_area_02.scss
+$c:3;
+#conBox02{ @include conUnit(padding, 50); box-sizing:border-box; width:100%; @include conUnit(height, 1200); background-color: #edd; 
+  &>.fullBox{ position:relative; @include conUnit(padding-top, 100); margin-top:5%; width:100%; height:70%; background-color: #f6f1ee; 
+    &>.patt_box{ position:absolute; top:5%; left:50%; transform:translateX(-50%); width:60%; @include conUnit(height, 100); background-image: url('../../img/etc/art02-patt.png'); background-size: contain; background-repeat: no-repeat; background-position:50% 50%; }
+    &>ul{ @include conUnit(padding, 50); box-sizing:border-box; @include fullBox; 
+      &>li{ float:left; width:30%; height:80%; margin-right:5%; background-color: #fff;
+      &:last-child{ margin-right:0; }
+        &>a{ display:block; box-sizing:border-box; width:100%; height:100%; margin:auto;
+          &>p{ display:none; @include conUnit(padding, 20); box-sizing:border-box; width:100%; @include conUnit(height, 100); background-color:rgba(255,255,255,0.7); transform:translateY(400%); text-align:center; @include conUnit(font-size, 20); color:#000; }
+        }
+      } //li
+    } //ul
+    &>.line{ display:block; position:absolute; left:50%; transform:translateX(-50%); @include conUnit(bottom, 50); width:90%; @include conUnit(height, 20);  background-color: #fff; @include conUnit(border-radius, 10);
+      &>ul{ @include fullBox; 
+        &>li{ float:left; width:100% / $c; height:100%; @include conUnit(border-radius, 10);  
+          &>a{ display:block; @include conUnit(width, 20); @include conUnit(height, 20); border-radius:100%; background-color: #edd; margin:auto; 
+          transform: scale(1.5);
+          }
+        &.action{ background-color: #edd; }
+        &.action>a{ transform: scale(2.3); }
+        } //li
+      } //ul
+    } //line
+   &>.txt_area{ display:block; position:absolute; top:105%; left:50%; transform:translateX(-50%); width:100%; @include conUnit(height, 100);
+    &>a{ display:block; position:absolute; right:0; width:10%; height:100%;  background-color:rgba(255,255,255,0.5); border-radius:10px; 
+      &>span{ display:block; @include fullBox; }
+      }
+    }
+  } //fullBox
+}

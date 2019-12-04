@@ -1,0 +1,17 @@
+// article_area.scss
+$c:4;
+#conBox{ position:relative; width:100%; @include conUnit(height, 900); 
+  &>.fullBox{ @include fullBox; background-color:#f6f1ee; 
+    &>ul{ width:80%; height:20%; margin:auto; 
+      &>li{ float:left; width:100% / $c; height:100%; 
+        &>span{ display:block; @include fullBox; text-align:center; @include conUnit(line-height, 200); @include conUnit(font-size, 30); font-weight:bold; color:#000; }
+      } //li
+    } //ul
+   &>.content_area{  width:100%; height:80%; 
+    &>.imgBox{ float:left; width:40%; height:100%; background-image: url('../../img/article01/img01.jpg'); background-size: contain; background-position:50% 50%; background-repeat: no-repeat; }
+    &>.txtArea{ position:absolute; right:0; width:60%; @include conUnit(height, 700); background-image: url('../../img/etc/flower-pattern-02.png'); background-size: contain; background-position:50% 50%; background-repeat: no-repeat;  
+      &>span{ display:block; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); @include conUnit(width, 500); @include conUnit(height, 300); @include conUnit(font-size, 30); color:#333; text-align:center;  }
+     }
+    } 
+  } //fullBox
+} //conBox
