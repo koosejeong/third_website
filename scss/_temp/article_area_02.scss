@@ -24,7 +24,9 @@ $c:3;
     } //line
    &>.txt_area{ display:block; position:absolute; top:105%; left:50%; transform:translateX(-50%); width:100%; @include conUnit(height, 100);
     &>a{ display:block; position:absolute; right:0; width:10%; height:100%;  background-color:rgba(255,255,255,0.5); border-radius:10px; 
-      &>span{ display:block; @include fullBox; }
+      &>span{ display:block; @include fullBox; 
+        &>i{ @include fullBox; @include conUnit(font-size, 50); color:#fff; text-align:center; @include conUnit(line-height, 100); }
+        }
       }
     }
   } //fullBox

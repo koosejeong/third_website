@@ -10,9 +10,11 @@ $count:5;
     &>.pattern_box{ position:absolute; top:65%; left:50%; transform:translateX(-50%); @include conUnit(width, 300); @include conUnit(height, 250); background-image: url('../../img/etc/pattern-01.png'); background-size:contain; background-repeat: no-repeat; background-position:50% 50%;
       &>span{ display:block; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:auto; height:auto; @include conUnit(font-size, 18); color:#fff; text-align:center; text-shadow:3px 3px 5px #000;  }
     } 
-    &>.btn_area{ position:absolute; right:10%; bottom:20%; width:auto; height:auto; background-color: #fff; 
-      &>button{ float:right; @include conUnit(width, 100); @include conUnit(height,100); background-color:transparent; }
-      &>.prev{ float:left;}
+    &>.btn_area{ position:absolute; right:10%; bottom:20%; width:auto; height:auto;  
+      &>button{ float:right; @include conUnit(width, 100); @include conUnit(height,100); background-color:transparent; 
+        &>i{ @include conUnit(font-size, 50); color:#fff; text-shadow:3px 3px 0 #333; }
+        }
+      &>.prev{ float:left; }
     } //btn_area
   } //guide_box
 } //viewBox

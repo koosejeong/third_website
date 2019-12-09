@@ -1,5 +1,5 @@
 // head_area.scss
-#headBox{ position:fixed; top:0; left:0; z-index:1000; width:100%; @include conUnit(height, 100); background-color: #fff; 
+#headBox{ position:fixed; top:0; left:0; z-index:1000; width:100%; @include conUnit(height, 100); background-color:rgba(255,255,255,0.7); 
   &>.gnb_area{ width:80%; height:100%; margin:auto; 
     &>h1{ float:left; width:20%; height:100%; background-color: #edd; margin-right:5%; }
     &>.gnb{ float:left; width:60%; height:100%; margin-right:5%; 
