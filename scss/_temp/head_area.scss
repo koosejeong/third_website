@@ -7,7 +7,7 @@
         &>li{ float:left; width:20%; height:100%; margin-left:5%;
           &>dl{ width:100%; height:auto;
             &>dt{ width:100%; @include conUnit(height, 100); @include conUnit(line-height, 100); text-align:center; text-transform:capitalize; @include conUnit(font-size, 20); }
-            &>dd{ display:none; width:100%; height:auto; background-color: #fff; 
+            &>dd{ display:none; width:100%; height:auto; background-color:rgba(255,255,255,0.7); ; 
               &>a{ display:block; width:100%; @include conUnit(height, 50); text-align:center; @include conUnit(line-height, 50); @include conUnit(font-size, 20); color:#000; text-transform:capitalize; }
             } //dd
           } //dl  
@@ -17,7 +17,7 @@
     &>.btn_area{ float:right; width:10%; height:100%;
       &>i{ @include fullBox; text-align:center; @include conUnit(font-size, 50); @include conUnit(line-height, 100); color:#000; } 
       &>ul{ display:none; width:100%; height:auto;
-        &>li{ width:100%; height:auto; background-color: #fff;
+        &>li{ width:100%; height:auto; background-color: rgba(255,255,255,0.7); 
           &>a{ display:block; width:100%; @include conUnit(height, 50); @include conUnit(font-size, 20); text-align:center; text-transform:capitalize; @include conUnit(line-height, 50); }
         } //li
       } //ul

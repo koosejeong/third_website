@@ -53,7 +53,7 @@
               display: none;
               width: 100%;
               height: auto;
-              background-color: #fff; }
+              background-color: rgba(255, 255, 255, 0.7); }
               #headBox > .gnb_area > .gnb > ul > li > dl > dd > a {
                 display: block;
                 width: 100%;
@@ -87,7 +87,7 @@
         #headBox > .gnb_area > .btn_area > ul > li {
           width: 100%;
           height: auto;
-          background-color: #fff; }
+          background-color: rgba(255, 255, 255, 0.7); }
           #headBox > .gnb_area > .btn_area > ul > li > a {
             display: block;
             width: 100%;
@@ -111,12 +111,14 @@
     height: 100%;
     margin: auto; }
     #viewBox > .guide_box > ul {
-      width: 500%;
-      height: 100%;
-      transform: translateX(-20%); }
+      position: relative;
+      width: 100%;
+      height: 100%; }
       #viewBox > .guide_box > ul > li {
-        float: left;
-        width: 20%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
         height: 100%; }
         #viewBox > .guide_box > ul > li > a {
           display: block;
@@ -149,26 +151,6 @@
         color: #fff;
         text-align: center;
         text-shadow: 3px 3px 5px #000; }
-    #viewBox > .guide_box > .btn_area {
-      position: absolute;
-      right: 10%;
-      bottom: 20%;
-      width: auto;
-      height: auto; }
-      #viewBox > .guide_box > .btn_area > button {
-        float: right;
-        width: 100px;
-        width: 6.25rem;
-        height: 100px;
-        height: 6.25rem;
-        background-color: transparent; }
-        #viewBox > .guide_box > .btn_area > button > i {
-          font-size: 50px;
-          font-size: 3.125rem;
-          color: #fff;
-          text-shadow: 3px 3px 0 #333; }
-      #viewBox > .guide_box > .btn_area > .prev {
-        float: left; }
 
 #conBox {
   position: relative;
