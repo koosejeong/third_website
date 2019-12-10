@@ -5,7 +5,6 @@
   const guideBox = viewBox.children('.guide_box');
   const slideUl = guideBox.children('ul');
   const slideLi = slideUl.children('li');
-  const btnArea = guideBox.children('.btn_area');
 
   $('.pattern_box').css({zIndex:20});
   let len = slideLi.length;
