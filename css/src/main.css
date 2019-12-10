@@ -148,9 +148,9 @@
         height: auto;
         font-size: 18px;
         font-size: 1.125rem;
-        color: #fff;
+        color: #333;
         text-align: center;
-        text-shadow: 3px 3px 5px #000; }
+        text-shadow: 3px 3px 0px #fff; }
 
 #conBox {
   position: relative;
